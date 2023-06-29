@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+      "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <h10>Популярные продукты</h10>
+  <div class="myProducts-gallery">
+    <img src=
+  "img/1bread.png"
+        alt="click here" 
+        onclick="myImageFunction(this)">
+    <img src=
+  "img/2bread.jpg"
+        alt="click here"
+        onclick="myImageFunction(this)">
+    <img src=
+  "img/3bread.jpeg"
+        alt="click here" 
+        onclick="myImageFunction(this)">
+    <img src=
+  "img/4bread.jpeg"
+        alt="click here" 
+        onclick="myImageFunction(this)">
+  </div>
+  
+  <div class="image-container">
+    <img id="img-Box" src=
+  "img/1bread.png"
+        alt="click here">
+  </div>
+  
+  <script>
+  function myImageFunction(productSmallImg) {
+      var productFullImg = document.getElementById("img-Box");
+      productFullImg.src = productSmallImg.src;
+  }
+  </script>
+</body>
+</html>
